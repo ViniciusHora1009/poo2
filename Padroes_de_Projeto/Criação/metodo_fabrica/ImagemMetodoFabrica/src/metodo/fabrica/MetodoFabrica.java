@@ -1,6 +1,4 @@
-
 package metodo.fabrica;
-
 
 public class MetodoFabrica {
 
@@ -11,6 +9,11 @@ public class MetodoFabrica {
         
         formato = FabricaFormato.gerarFormato("png");
         formato.gera();
+		
+		formato = FabricaFormato.gerarFormato("bmp");
+        formato.gera();
+		
+		formato = FabricaFormato.gerarFormato("gif");
+        formato.gera();
     }    
 }
-
