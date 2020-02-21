@@ -1,3 +1,5 @@
+package metodo.fabrica;
+
 public class FormatoBmp implements Formato{
     @Override
     public Imagem gera() {
