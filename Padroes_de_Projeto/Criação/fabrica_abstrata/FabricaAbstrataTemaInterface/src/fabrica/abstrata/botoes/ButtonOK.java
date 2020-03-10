@@ -22,14 +22,16 @@ import javax.swing.JButton;
 public class ButtonOK  extends JButton{
     
     
-    public ButtonOK(){
-     Image img = null;
-        try {
-            img = ImageIO.read(getClass().getResource("/Ok-icon.png"));
-        } catch (IOException ex) {
-            Logger.getLogger(ButtonCancel.class.getName()).log(Level.SEVERE, null, ex);
+    public ButtonOK(String tema){
+        if (tema.equalsIgnoreCase("tema2")){
+            Image img = null;
+            try {
+                img = ImageIO.read(getClass().getResource("/Ok-icon.png"));
+            } catch (IOException ex) {
+                Logger.getLogger(ButtonCancel.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            this.setIcon(new ImageIcon(img));
         }
-        this.setIcon(new ImageIcon(img));
     }
     
 }
